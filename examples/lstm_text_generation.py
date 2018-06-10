@@ -22,7 +22,8 @@ import random
 import sys
 import io
 
-path = get_file('nietzsche.txt', origin='https://s3.amazonaws.com/text-datasets/nietzsche.txt')
+#path = get_file('nietzsche.txt', origin='https://s3.amazonaws.com/text-datasets/nietzsche.txt')
+path = '/Users/yiningshi/dev/keras/examples/charlottebronte.txt'
 with io.open(path, encoding='utf-8') as f:
     text = f.read().lower()
 print('corpus length:', len(text))
